@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>AE7.1</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Piedra, Papel, Tijera, Lagarto, Spock</h1>
+  </header>
+
+  <section class="marcador">
+    <div>
+      <h2>USUARIO</h2>
+      <img id="img-user" src="imgs/interrogacion.png" alt="?" class="icono">
+      <p id="eleccion-user">---</p>
+      <p id="puntos-user">0</p>
+    </div>
+    <span class="vs">VS</span>
+    <div>
+      <h2>IA</h2>
+      <img id="img-ia" src="imgs/interrogacion.png" alt="?" class="icono">
+      <p id="eleccion-ia">---</p>
+      <p id="puntos-ia">0</p>
+    </div>
+  </section>
+
+  <section id="resultado">Selecciona tu jugada</section>
+
+  <section class="opciones">
+    <button onclick="jugar('piedra')"><img src="imgs/piedra.png" alt="Piedra"></button>
+    <button onclick="jugar('papel')"><img src="imgs/papel.png" alt="Papel"></button>
+    <button onclick="jugar('tijera')"><img src="imgs/tijera.png" alt="Tijera"></button>
+    <button onclick="jugar('lagarto')"><img src="imgs/lagarto.png" alt="Lagarto"></button>
+    <button onclick="jugar('spock')"><img src="imgs/spock.png" alt="Spock"></button>
+  </section>
+
+  <button onclick="reiniciar()" id="reiniciar">Reiniciar</button>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
